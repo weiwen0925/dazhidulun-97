@@ -95,6 +95,47 @@ body{margin:0;background:var(--bg);color:var(--text);
 .toc-body{flex:1;}
 .toc-name{font-size:19.5px;font-weight:700;line-height:1.7;color:var(--accent);margin:0 0 4px;}
 .toc-sub{font-size:14.5px;color:var(--text-muted);line-height:1.6;font-family:"Noto Sans TC",sans-serif;}
+/* toc-card 影音膠囊（右下角）*/
+.toc-card{position:relative;padding-bottom:46px;}
+.toc-video{position:absolute;right:16px;bottom:13px;display:inline-flex;align-items:center;gap:5px;
+  font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:1px;line-height:1;
+  padding:6px 14px;border-radius:16px;cursor:pointer;
+  color:#7a5410;background:linear-gradient(135deg,#f3dFA8,#e9cf86);
+  border:1px solid #c79a3a;box-shadow:0 1px 4px rgba(184,134,11,.25);
+  transition:all .2s;-webkit-user-select:none;user-select:none;}
+.toc-video:hover{background:linear-gradient(135deg,#b8860b,#d4a84b);color:#fff;border-color:#b8860b;
+  box-shadow:0 3px 12px rgba(184,134,11,.45);transform:translateY(-1px);}
+.toc-video .tv-play{font-size:11px;}
+/* 影音總導讀 band（總目錄下方）*/
+.video-band{max-width:1100px;margin:4px auto 26px;padding:0 28px;text-align:center;}
+.video-band a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  font-family:"Noto Sans TC",sans-serif;font-size:16px;letter-spacing:1.5px;
+  padding:11px 28px;border-radius:26px;color:#5a3a0a;
+  background:linear-gradient(135deg,#f0d79a,#e6c77e);border:1px solid #c79a3a;
+  box-shadow:0 2px 10px rgba(184,134,11,.28);transition:all .2s;}
+.video-band a:hover{background:linear-gradient(135deg,#b8860b,#d4a84b);color:#fff;border-color:#b8860b;
+  box-shadow:0 4px 16px rgba(184,134,11,.45);transform:translateY(-2px);}
+.video-band .vb-play{font-size:13px;}
+/* 章節頭影音膠囊 */
+.ch-video{display:inline-flex;align-items:center;gap:7px;margin-top:16px;text-decoration:none;
+  font-family:"Noto Sans TC",sans-serif;font-size:15px;letter-spacing:1px;
+  padding:8px 20px;border-radius:22px;color:#3a2708;
+  background:linear-gradient(135deg,#e9cf86,#d4a84b);border:1px solid #c79a3a;
+  box-shadow:0 2px 8px rgba(0,0,0,.18);transition:all .2s;}
+.ch-video:hover{background:linear-gradient(135deg,#d4a84b,#f0d79a);transform:translateY(-1px);
+  box-shadow:0 4px 14px rgba(184,134,11,.5);}
+/* 主頁浮動影音鈕（隨閱讀中的品切換）*/
+.wy-video-fab{position:fixed;right:22px;bottom:78px;z-index:121;display:inline-flex;align-items:center;
+  gap:8px;text-decoration:none;font-family:"Noto Sans TC",sans-serif;font-size:15px;letter-spacing:1px;
+  padding:11px 20px;border-radius:28px;color:#3a2708;
+  background:linear-gradient(135deg,#e6c77e,#d4a84b);border:1px solid #b8860b;
+  box-shadow:0 4px 16px rgba(0,0,0,.28);transition:all .25s,opacity .3s;
+  -webkit-user-select:none;user-select:none;max-width:230px;}
+.wy-video-fab:hover{background:linear-gradient(135deg,#b8860b,#d4a84b);color:#fff;
+  box-shadow:0 6px 22px rgba(184,134,11,.5);transform:translateY(-2px);}
+.wy-video-fab .vf-play{font-size:12px;}
+.wy-video-fab .vf-label{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media(max-width:900px){.wy-video-fab{font-size:14px;padding:9px 16px;bottom:70px;right:14px;max-width:62vw;}}
 /* chapter */
 .chapter{margin:40px 0 0;scroll-margin-top:20px;}
 .ch-head{background:var(--headGrad);color:#fff;text-align:center;padding:40px 24px 34px;}
@@ -150,41 +191,6 @@ body{margin:0;background:var(--bg);color:var(--text);
     border-radius:8px;background:var(--sbBg);color:var(--gold);border:0;font-size:20px;cursor:pointer;}
   .hero-title{font-size:38px;} .ch-name{font-size:26px;}
 }
-
-/* wy-cross-nav-css v1 */
-/* ── 跨卷導覽（側欄底部）── */
-.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
-  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
-.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
-  height:1px;background:linear-gradient(90deg,
-    transparent 0%,rgba(184,134,11,.15) 18%,
-    var(--gold,#b8860b) 50%,
-    rgba(184,134,11,.15) 82%,transparent 100%);
-  box-shadow:0 1px 0 rgba(212,168,75,.18);}
-.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
-  height:1px;background:linear-gradient(90deg,
-    transparent,rgba(184,134,11,.55),transparent);}
-.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
-  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
-  border-radius:7px;transition:all .25s;}
-.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
-.sb-x-glyph{width:30px;height:30px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1.2px solid rgba(212,196,168,.55);
-  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
-  background:rgba(184,134,11,.08);transition:all .25s;}
-.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
-  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
-  box-shadow:0 0 10px rgba(184,134,11,.5);}
-.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
-  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
-  line-height:1.25;}
-.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
-.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
-  rgba(184,134,11,.22),rgba(212,168,75,.18));
-  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
-  font-weight:700;letter-spacing:1px;}
-
 </style>
 <meta name="wy-full-protection" content="v2-silent">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -294,21 +300,6 @@ body{margin:0;background:var(--bg);color:var(--text);
 <a class="sb-item" href="#ch-3"><span class="sb-circle">三</span><span class="sb-label" data-wytext="n/GBjOrfjNDvnOPU"></span></a>
 <a class="sb-item" href="#ch-4"><span class="sb-circle">四</span><span class="sb-label" data-wytext="nv68gejhgcnm"></span></a>
 </nav>
-  <!-- wy-cross-nav v1 -->
-  <div class="sb-cross">
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-96/" title="第九十六卷">
-      <span class="sb-x-glyph">←</span>
-      <span class="sb-x-label">卷九十六</span>
-    </a>
-    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
-      <span class="sb-x-glyph">智</span>
-      <span class="sb-x-label">門頁</span>
-    </a>
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-98/" title="第九十八卷">
-      <span class="sb-x-glyph">→</span>
-      <span class="sb-x-label">卷九十八</span>
-    </a>
-  </div>
 </aside>
 <main class="main">
 <section class="site-hero">
@@ -334,11 +325,14 @@ body{margin:0;background:var(--bg);color:var(--text);
 <section class="toc-section">
 <h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2>
 <div class="toc-desc" data-wytext="kvSagNjnjeTlkdT2Tu+OF8Txup/vhI34+o7axpDY7Iu+uNCB2tTy0sjp4J/twoDM55zKtRn1mlbU8tHI//qf++g="></div>
+<div class="video-band">
+<a href="https://youtu.be/4X1MjM_b6LY" rel="noopener" target="_blank"><span class="vb-play">▶</span> 1–4品經典補充解說 · 總導讀</a>
+</div>
 <div class="toc-grid">
-<a class="toc-card" data-ch="1" href="#ch-1"><div class="toc-num" data-wytext="k8Gt"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsuItcvFpJLyuIHr4Uir01WE48fEoLfLxZOSzbSC/MuAyOg="></div><div class="toc-sub" data-wytext="k8GAjMb6jeLxkObui4CB2JHs2eHQxP3hnNvLgcH1neGE0aGEkID1n57xiPjngdjahP3pyIa0y8Wkn96Ogsbx"></div></div></a>
-<a class="toc-card" data-ch="2" href="#ch-2"><div class="toc-num" data-wytext="k8Oh"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsWSocnOipLsooPM7kir01WL3NTJgZrJy6qQ9pOM6f2P9dqcyuyLsrc="></div><div class="toc-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcXP957Q0oDN5ZL7h9yiopGc4w=="></div></div></a>
-<a class="toc-card" data-ch="3" href="#ch-3"><div class="toc-num" data-wytext="k8Gk"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsWxm8X9lJPApo3u20ir01WL4fHFg5zF/raRyriM29E="></div><div class="toc-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcr4/p7X/oPxzZLKtNG/qpG11p+k5ITE/w=="></div></div></a>
-<a class="toc-card" data-ch="4" href="#ch-4"><div class="toc-num" data-wytext="kuK2"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsS+psj/qp7Zr0SjzUiM2uuJ4NLIqprI/oGS5b6C2sU="></div><div class="toc-sub" data-wytext="n++Ejfj6jtrGkNjshqKQ37vf1u39ysTVnezIgu3ineaq3Y+Anpb3nZXth+LPgOb6hMnB"></div></div></a>
+<a class="toc-card" data-ch="1" href="#ch-1"><div class="toc-num" data-wytext="k8Gt"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsuItcvFpJLyuIHr4Uir01WE48fEoLfLxZOSzbSC/MuAyOg="></div><div class="toc-sub" data-wytext="k8GAjMb6jeLxkObui4CB2JHs2eHQxP3hnNvLgcH1neGE0aGEkID1n57xiPjngdjahP3pyIa0y8Wkn96Ogsbx"></div></div><span class="toc-video" data-href="https://youtu.be/PrUN7zqdUJ8" title="觀看第一品影音"><span class="tv-play">▶</span>影音</span></a>
+<a class="toc-card" data-ch="2" href="#ch-2"><div class="toc-num" data-wytext="k8Oh"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsWSocnOipLsooPM7kir01WL3NTJgZrJy6qQ9pOM6f2P9dqcyuyLsrc="></div><div class="toc-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcXP957Q0oDN5ZL7h9yiopGc4w=="></div></div><span class="toc-video" data-href="https://youtu.be/5S3ZTFWwfaY" title="觀看第二品影音"><span class="tv-play">▶</span>影音</span></a>
+<a class="toc-card" data-ch="3" href="#ch-3"><div class="toc-num" data-wytext="k8Gk"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsWxm8X9lJPApo3u20ir01WL4fHFg5zF/raRyriM29E="></div><div class="toc-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcr4/p7X/oPxzZLKtNG/qpG11p+k5ITE/w=="></div></div><span class="toc-video" data-href="https://youtu.be/DTp2ULZCNzg" title="觀看第三品影音"><span class="tv-play">▶</span>影音</span></a>
+<a class="toc-card" data-ch="4" href="#ch-4"><div class="toc-num" data-wytext="kuK2"></div><div class="toc-body"><div class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsS+psj/qp7Zr0SjzUiM2uuJ4NLIqprI/oGS5b6C2sU="></div><div class="toc-sub" data-wytext="n++Ejfj6jtrGkNjshqKQ37vf1u39ysTVnezIgu3ineaq3Y+Anpb3nZXth+LPgOb6hMnB"></div></div><span class="toc-video" data-href="https://youtu.be/Z5MKBfEO7TQ" title="觀看第四品影音"><span class="tv-play">▶</span>影音</span></a>
 </div>
 </section>
 <section class="chapter" id="ch-1">
@@ -347,6 +341,7 @@ body{margin:0;background:var(--bg);color:var(--text);
 <div class="ch-name" data-wytext="kNWBgNn6jfrlVa7CTsuItcvFpJLyuIHr4Uir01WE48fEoLfLxZOSzbSC/MuAyOg="></div>
 <div class="ch-sub" data-wytext="k8GAjMb6jeLxkObui4CB2JHs2eHQxP3hnNvLgcH1neGE0aGEkID1n57xiPjngdjahP3pyIa0y8Wkn96Ogsbx"></div>
 <div class="ch-head-line"></div>
+<a class="ch-video" href="https://youtu.be/PrUN7zqdUJ8" rel="noopener" target="_blank"><span class="vf-play">▶</span> 第一品影音</a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -361,6 +356,7 @@ body{margin:0;background:var(--bg);color:var(--text);
 <div class="ch-name" data-wytext="kNWBgNv2jfrlVa7CTsWSocnOipLsooPM7kir01WL3NTJgZrJy6qQ9pOM6f2P9dqcyuyLsrc="></div>
 <div class="ch-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcXP957Q0oDN5ZL7h9yiopGc4w=="></div>
 <div class="ch-head-line"></div>
+<a class="ch-video" href="https://youtu.be/5S3ZTFWwfaY" rel="noopener" target="_blank"><span class="vf-play">▶</span> 第二品影音</a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -375,6 +371,7 @@ body{margin:0;background:var(--bg);color:var(--text);
 <div class="ch-name" data-wytext="kNWBgNnzjfrlVa7CTsWxm8X9lJPApo3u20ir01WL4fHFg5zF/raRyriM29E="></div>
 <div class="ch-sub" data-wytext="nv6mjPfTgfDkk9/Xi5mg0r731tvVyOHKn+XogfDHkdem0JO1VvPAWcr4/p7X/oPxzZLKtNG/qpG11p+k5ITE/w=="></div>
 <div class="ch-head-line"></div>
+<a class="ch-video" href="https://youtu.be/DTp2ULZCNzg" rel="noopener" target="_blank"><span class="vf-play">▶</span> 第三品影音</a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -389,6 +386,7 @@ body{margin:0;background:var(--bg);color:var(--text);
 <div class="ch-name" data-wytext="kNWBgfrhjfrlVa7CTsS+psj/qp7Zr0SjzUiM2uuJ4NLIqprI/oGS5b6C2sU="></div>
 <div class="ch-sub" data-wytext="n++Ejfj6jtrGkNjshqKQ37vf1u39ysTVnezIgu3ineaq3Y+Anpb3nZXth+LPgOb6hMnB"></div>
 <div class="ch-head-line"></div>
+<a class="ch-video" href="https://youtu.be/Z5MKBfEO7TQ" rel="noopener" target="_blank"><span class="vf-play">▶</span> 第四品影音</a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -407,6 +405,7 @@ body{margin:0;background:var(--bg);color:var(--text);
 </div>
 <footer class="site-footer" data-wytext="lPmngcXdjvDekNbThoav1K391PrOyd38n+XogM3vVayaGd6q/dnh0MT94Zzby4HB9ZD9rN6bgZO03Jyg5YT/w43d/oXR9g37gA2RndudleSE6emB48aL2cLIoqzI5bCSxLSC9M4="></footer>
 </main>
+<a class="wy-video-fab" href="https://youtu.be/4X1MjM_b6LY" id="wyVideoFab" rel="noopener" target="_blank" title="觀看本品影音"><span class="vf-play">▶</span><span class="vf-label" data-wytext="ksScjf7Jj9HZkNz7hoO5" id="wyVideoFabLabel"></span></a>
 <button id="backTop">↑</button>
 <script>
 var rpFill=document.getElementById('rpFill'),rpPct=document.getElementById('rpPct');
@@ -488,6 +487,32 @@ if(window.__wyReady&&window.__wyReady.then){window.__wyReady.then(function(){set
 /* sb-brand 回頂 */
 var sbBrand=document.getElementById('sbBrand');
 if(sbBrand)sbBrand.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+/* 影音資料（隨閱讀中的品切換）*/
+var WY_VIDEO_OVERVIEW="https://youtu.be/4X1MjM_b6LY";
+var WY_VIDEOS=[{"label": "第一品 · 求法動力", "url": "https://youtu.be/PrUN7zqdUJ8"}, {"label": "第二品 · 論主問答", "url": "https://youtu.be/5S3ZTFWwfaY"}, {"label": "第三品 · 般若之鏡", "url": "https://youtu.be/DTp2ULZCNzg"}, {"label": "第四品 · 金剛頂", "url": "https://youtu.be/Z5MKBfEO7TQ"}];   /* [{label,url}, ...] 依品序 */
+var wyFab=document.getElementById('wyVideoFab');
+var wyFabLabel=document.getElementById('wyVideoFabLabel');
+function updateVideoFab(idx){
+  if(!wyFab)return;
+  if(idx>=0&&WY_VIDEOS[idx]){
+    wyFab.href=WY_VIDEOS[idx].url;
+    wyFabLabel.textContent=WY_VIDEOS[idx].label;
+    wyFab.title='觀看 '+WY_VIDEOS[idx].label;
+  }else{
+    wyFab.href=WY_VIDEO_OVERVIEW;
+    wyFabLabel.textContent='影音總導讀';
+    wyFab.title='1–4品經典補充解說';
+  }
+}
+/* toc-card 內影音膠囊：避免觸發卡片跳轉，改開影片 */
+document.addEventListener('click',function(e){
+  var v=e.target;
+  while(v&&!(v.classList&&v.classList.contains('toc-video')))v=v.parentElement;
+  if(!v)return;
+  e.preventDefault();e.stopImmediatePropagation();
+  var u=v.getAttribute('data-href');
+  if(u)window.open(u,'_blank','noopener');
+},true);
 /* 側欄高亮 */
 var sbItems=document.querySelectorAll('.sb-item');
 var secs=document.querySelectorAll('section.chapter');
@@ -495,6 +520,7 @@ function highlight(){
   var idx=-1;
   secs.forEach(function(s,i){if(s.getBoundingClientRect().top<window.innerHeight*0.35)idx=i;});
   sbItems.forEach(function(it,i){it.classList.toggle('active',i===idx);});
+  updateVideoFab(idx);
 }
 window.addEventListener('scroll',highlight,{passive:true});highlight();
 /* 回頂按鈕 */
