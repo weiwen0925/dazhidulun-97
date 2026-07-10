@@ -1066,5 +1066,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C97P2:END-->
+<!--WY-C97P3:BEGIN-->
+<style id="wy-c97p3-css">
+.c97p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c97p3-fabbox.show{display:block;}
+.c97p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c97p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c97p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c97p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c97p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c97p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c97p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c97p3-modal.open{display:flex;}
+.c97p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c97p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c97p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c97p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c97p3-close:hover{background:#e3d5b8;}
+.c97p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c97p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c97p3-tbl th,.c97p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c97p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c97p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c97p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c97p3-tbl b{color:#8b2500;}
+.c97p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c97p3-note b{color:#8b2500;}
+@media(max-width:900px){.c97p3-fabbox{right:14px;}.c97p3-tbl{font-size:11.5px;}.c97p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c97p3-fabbox" id="c97p3Box"><button class="c97p3-btn" id="c97p3Btn" type="button" aria-label="開啟全景總表"><span class="c97p3-ic">▦</span><span class="c97p3-ls"><span class="c97p3-l1">本品 · 第三品</span><span class="c97p3-l2">生身法身之辯</span></span></button></div><div class="c97p3-modal" id="c97p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c97p3-card"><button class="c97p3-close" id="c97p3Close" type="button" aria-label="關閉">×</button><h3>卷九十七品三 全景總表 · 身相之辯與拔箭三昧</h3><p class="sub">曇無竭生身法身之辯、毒箭喻拔箭學、立破用三昧次第</p><table class="c97p3-tbl"><caption>曇無竭身相雙重視角診斷矩陣</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心叩問</td><td>曇無竭為是生身？為是法身？五欲共娛與神通入定七歲並存，構成本體與表象的雙向矛盾</td></tr><tr><td>視角一：生身菩薩</td><td>泥中避熱——利根禪定，受五欲而不失禪定；如龍起雲，未離煩惱而修善法，為眾生故不盡結使（留惑潤生）</td></tr><tr><td>視角二：法身大士</td><td>果熟鳥食——法性生身，應眾生善根因緣成熟而變化示現，六萬婇女、空中大臺皆非實有生滅</td></tr><tr><td>中觀統合</td><td>緣起如幻、即俗而真；不壞假名而說實相，兩視角底層邏輯一致，不應執著人／神二分</td></tr></tbody></table><table class="c97p3-tbl"><caption>毒箭喻拔箭學與病理矩陣</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>大欲聚焦</td><td>薩陀波崙聞教大欲心生、更無餘念；此欲非世間染著，是向內趨向實相的認識論渴求</td></tr><tr><td>毒箭喻解構</td><td>箭鋒是邪見疑，毒液是貪欲；凡夫畏失身命（物理層級），菩薩畏失慧命（形而上層級，菩提道斷）</td></tr><tr><td>取相著病理</td><td>所有心者，取相著；乃至善法中亦有是病——執空、執解脫亦是毒箭，比世俗貪欲更難拔除</td></tr><tr><td>拔箭法門</td><td>唯有般若（曇無竭）能拔箭鋒；世間善法如止痛藥、禪定如暫壓，無得為拔方是究竟</td></tr></tbody></table><table class="c97p3-tbl"><caption>立破用三昧次第與雙螺旋統攝</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>立：諸法性觀三昧</td><td>觀一切法實性，穿透現象界迷霧，作為破執的立足點</td></tr><tr><td>破：諸法性不可得三昧</td><td>空亦復空，不著空相不得決定相，連「已得空」之得亦須空去</td></tr><tr><td>用：破諸法無明三昧</td><td>以無所得智迴向世俗，破常樂我淨四顛倒，還原諸法無常苦空無我之真相</td></tr><tr><td>雙螺旋統攝</td><td>曇無竭之「有」（即俗而真）與薩陀波崙之「空」（真俗不二），一由真入俗以度生、一由俗入真以求法，殊途同歸於無礙知見</td></tr></tbody></table><p class="c97p3-note">本品以兩條主線的辯證張力收攝於中觀心要：曇無竭在極致繁華中維持本體清淨（生身泥中避熱／法身果熟鳥食），薩陀波崙在極致苦迫中拔除取相著之毒箭（立→破→用三昧次第）。表面是「說法者之樂」與「求法者之苦」的對立，實則同歸「緣起如幻、即俗而真」一義：五欲莊嚴不礙當體即空，苦行求索不礙終歸無所得。尤須警惕者，是「善法中亦有是病」——對空性、解脫、佛法本身的執取，反而是最難察覺、最難拔除的毒箭。唯有連「得空」之念亦一併空去，方是「戲論息滅處，即是真實歸途」的究竟拔箭。</p></div></div>
+<script id="wy-c97p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c97p3Btn"),BOX=document.getElementById("c97p3Box"),MODAL=document.getElementById("c97p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoFab,.wy-video-fab,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c97p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C97P3:END-->
 </body>
 </html>
