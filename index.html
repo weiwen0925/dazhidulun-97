@@ -1559,5 +1559,61 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH97P1:END-->
+<!--WY-BH97P2:BEGIN-->
+<style id="wy-bh97p2-css">
+.bh97p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh97p2-fabbox.show{display:block;}
+.bh97p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh97p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh97p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh97p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh97p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh97p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh97p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh97p2-modal.open{display:flex;}
+.bh97p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh97p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh97p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh97p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh97p2-close:hover{background:#dde2e6;}
+.bh97p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh97p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh97p2-tbl th,.bh97p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh97p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh97p2-tbl thead th:nth-child(1){width:32%;}.bh97p2-tbl thead th:nth-child(2){width:41%;}.bh97p2-tbl thead th:nth-child(3){width:27%;}
+.bh97p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh97p2-guan{background:#eef2f5;color:#37505f;}
+.bh97p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh97p2-tbl tbody tr:nth-child(even) td.bh97p2-guan{background:#e8eef2;}
+.bh97p2-tbl b{color:#8b2500;}
+.bh97p2-guan b{color:#2f6b5a;}
+.bh97p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh97p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh97p2-fabbox{right:14px;}.bh97p2-tbl{font-size:11px;}.bh97p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh97p2-fabbox" id="bh97p2Box"><button class="bh97p2-btn" id="bh97p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh97p2-ic">譯</span><span class="bh97p2-ls"><span class="bh97p2-l1">本品 · 原文·白話·中觀</span><span class="bh97p2-l2">白話翻譯表</span></span></button></div><div class="bh97p2-modal" id="bh97p2Modal" role="dialog" aria-modal="true"><div class="bh97p2-card"><button class="bh97p2-close" id="bh97p2Close" type="button" aria-label="關閉">×</button><h3>第2品 · 薩陀波崙東行立誓求法（二）論主三番設問 原文↔白話↔中觀 翻譯表</h3><p class="sub">《大智度論》卷九十七 · 薩陀波崙品之餘 · 第二品論主問答（空中佛現是何等佛‧眾香城在何處‧曇無竭因緣為云何）· 原文↔白話↔中觀概念 逐段對照（經文原典部分與第一品重疊處已剔除，不重複收錄）</p><table class="bh97p2-tbl"><caption>《大智度論》卷97‧第二品‧論主三番設問‧原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh97p2-src">問曰：空中佛現，是何等佛？先何以但有音聲而今現身？佛既現身，何以不即度，方遣至曇無竭所？</td><td>問：空中出現的佛，究竟是什麼樣的佛？之前為什麼只有聲音、而現在卻現出身形？佛既然已經現身，為什麼不直接度化薩陀波崙，反而要派遣他前往曇無竭菩薩那裡？</td><td class="bh97p2-guan"><b>三番設問之一·佛身現否的追問</b>——此問一連提出三個層層遞進的疑點：佛的身分為何、聲與身為何前後不同、現身後為何不直接度化——是論主對經文情節安排最細膩的邏輯檢驗，開啟本品「論主問答」核心段落。</td></tr><tr><td class="bh97p2-src">答曰：有人言：非真佛，但是像現耳——或諸佛遣化，或大菩薩現作。以先善根福德未成就故，但聞聲；今七日七夜一心念佛，功德成就故，得見佛身。佛所以不即度者，以其與曇無竭世世因緣，應當從彼度故。有人應從舍利弗度，假使諸佛現身，不能令悟。佛讚言善哉者，以薩陀波崙至意求知去處、聞般若因緣故，佛現身而讚善哉。</td><td>答：有人說：這並非真正的佛，只是佛的化現影像而已——或許是諸佛派遣的化身，或許是大菩薩示現而成。因為薩陀波崙先前的善根福德還沒有成就，所以起初只能聽聞聲音；如今經過七天七夜一心念佛，功德已然成就，因此才能得見佛身。至於佛之所以不直接度化他，是因為他與曇無竭菩薩生生世世有深厚因緣，應當從曇無竭那裡得度。就像有的人應當從舍利弗那裡得度，即使諸佛親自現身，也無法使他開悟一樣。佛之所以讚歎「善哉」，是因為薩陀波崙誠心懇切地尋求去處、渴望聽聞般若的因緣，佛因此現身讚歎善哉。</td><td class="bh97p2-guan"><b>化身非實·因緣定度化之路</b>——此答揭示一項深刻的中觀原則：佛的度化並非齊一劃一的萬能救度，而是嚴格依循因緣——每一眾生皆有其特定的得度因緣與善知識，即使佛陀親自現身，也不能違逆因緣強行度化；像現與真身的分別，在畢竟空的立場下其實並非究竟對立，而是隨順因緣示現的方便相。</td></tr><tr><td class="bh97p2-src">過去諸佛行菩薩道時，求此般若，亦如是種種勤苦；以初發心，先罪厚重，福德未集故。佛安慰其心：「汝求般若波羅蜜，雖勤苦，莫懈怠，莫生退沒心！一切眾生行異，因時皆苦，受果時樂。當思惟諸佛無量功德果報，以自勸勉。」如是安慰已，作是言：「汝從是東行，去此五百由旬，有城名眾香，乃至不久當聞般若波羅蜜。」</td><td>過去諸佛行菩薩道的時候，尋求這般若波羅蜜，也同樣經歷過種種勤苦；這是因為初發心之時，過去所造的罪業深重，福德還未積聚完備的緣故。佛因此安慰薩陀波崙的心：「你尋求般若波羅蜜，雖然辛勤勞苦，但不要懈怠，不要生起退轉沉沒的心！一切眾生所行的道路各有不同，在因地修行時都會受苦，到了證得果位時便得安樂。你應當思惟諸佛無量的功德果報，以此自我勉勵。」如此安慰之後，佛又說：「你從這裡向東而行，距離此地五百由旬，有一座城名叫眾香，……不久之後你就能聽聞般若波羅蜜。」</td><td class="bh97p2-guan"><b>因苦果樂·勤苦本身即是菩薩道的因緣</b>——佛陀的安慰之語點出菩薩道「因時皆苦、受果時樂」的因果結構，勤苦並非修行的障礙或錯誤，而是初發心菩薩罪業未淨、福德未聚時必然經歷的階段；以諸佛功德果報自我勸勉，正是將眼前的苦轉化為趣向佛果的動力。</td></tr><tr><td class="bh97p2-src">問曰：眾香城在何處？</td><td>問：眾香城究竟在什麼地方？</td><td class="bh97p2-guan"><b>三番設問之二·地理座標的深層叩問</b>——這一問看似只是詢問地理位置，實則牽動下文對業感因緣與空間如幻的深入辨析——眾香城的所在，並非固定的地理座標，而是隨眾生因緣而顯現的所在。</td></tr><tr><td class="bh97p2-src">答曰：過去佛滅度後，但有遺法，是法不周遍閻浮提，眾生有聞法因緣處則到。爾時，眾香國土豐樂，多出七寶故，以七寶作城。時薩陀波崙雖同在閻浮提，而在無佛法、無七寶處生，但傳聞佛名、般若波羅蜜是佛道。是人先世廣集福德，煩惱輕微故，聞即信樂，厭惡世樂，捨其親屬，到空林中住，欲至有佛法國土。音聲示語者，恐其異去，不得到曇無竭菩薩所，是故語之；次後佛為現身，示其去處。</td><td>答：過去佛入滅之後，只留下遺教之法，這法並不周遍整個閻浮提世界，眾生要在與聽聞正法有因緣的地方，才能到達聽聞正法的處所。當時，眾香國土豐足安樂，盛產七寶，因此用七寶建造城池。那時薩陀波崙雖然同樣生在閻浮提，卻出生在沒有佛法、沒有七寶的地方，只是輾轉聽聞佛的名號，知道般若波羅蜜就是成佛之道。這個人在過去世廣泛積集福德，煩惱又十分輕微，因此一聽聞就生起信心與愛樂，厭離世間的享樂，捨棄了他的親屬，來到空寂的林中安住，一心想要到達有佛法的國土。空中聲音之所以出言指示，是擔心他走錯路、無法到達曇無竭菩薩的住處，所以才開口告知；接著佛又為他現出身形，指示他前去的方向。</td><td class="bh97p2-guan"><b>業感地理學·有聞法因緣處則到</b>——「眾生有聞法因緣處則到」一句是全段的核心命題：眾香城的存在與否、可達與否，完全取決於眾生自身的業力因緣，而非客觀固定的地理實體；這正是依報隨業轉的具體示現——同一閻浮提，有人生於七寶莊嚴、佛法興盛之處，有人卻生於荒僻無聞之地，差別只在各自因緣。</td></tr><tr><td class="bh97p2-src">問曰：薩陀波崙因緣已具聞於上，今曇無竭因緣為云何？</td><td>問：薩陀波崙的因緣已經在前文詳細聽聞過了，那麼現在曇無竭菩薩的因緣又是如何呢？</td><td class="bh97p2-guan"><b>三番設問之三·由己及人的因緣追問</b>——此問將論述焦點從薩陀波崙轉向曇無竭菩薩，體現論主逐一窮盡經文因緣脈絡的論述方法——求法者與說法者，兩端因緣須同時究明，方能完整理解這場感應道交的全貌。</td></tr><tr><td class="bh97p2-src">答曰：「欝伽陀」，秦言「盛」；「達磨」，秦言「法」。此菩薩在眾香城中，為眾生隨意說法，令眾生廣種善根，故號「法盛」。其國無王，此中人民皆無吾我，如欝單越人，唯以曇無竭菩薩為王。其國難到，薩陀波崙不惜身命，又得諸佛菩薩接助能到。大菩薩為度眾生故，生如是國中；眾生無所乏短，其心調柔，易可得度故。</td><td>答：「欝伽陀」，翻譯成秦地的語言是「盛」的意思；「達磨」，翻譯過來是「法」的意思。這位菩薩在眾香城中，隨順眾生根機意樂而說法，使眾生廣泛種植善根，因此稱號為「法盛」。這個國家沒有國王，這裡的人民都沒有你我之分的執著，就像欝單越洲的人一樣，只把曇無竭菩薩當作王來尊崇。這個國家極難到達，薩陀波崙是因為不惜身命，又得到諸佛菩薩的接引扶助才能到達。大菩薩之所以出生在這樣的國度中度化眾生，是因為此地眾生沒有絲毫匱乏欠缺，人心調柔，容易被度化的緣故。</td><td class="bh97p2-guan"><b>法盛之名與無王之國·調柔心為度化根本</b>——曇無竭「法盛」之名，直接彰顯其度生之德；而無王、無吾我、心調柔三者相扣，說明真正易於受度的眾生，並非物質豐足本身，而是由豐足所帶來的心無所乏、我執淡薄的心理狀態——外在國土的莊嚴，終究是為了成就內在心性的調柔而施設。</td></tr></tbody></table><p class="bh97p2-note">本表為卷九十七第二品「論主三番設問」之原文‧白話‧中觀三欄逐段對照，共七段問答，逐一辨析空中佛身之疑、眾香城地理因緣、曇無竭法盛之名。與第一品經文原典重疊之段落（開篇之忘問憂愁、眾香城初步描述、往趣曇無竭之教誨）已依鐵律核實剔除，不重複翻譯。　中觀關鍵詞：化身非實　因緣定度化　業感地理學　法盛之名　調柔心為度化根本</p></div></div>
+<script id="wy-bh97p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh97p2Btn"),BOX=document.getElementById("bh97p2Box"),MODAL=document.getElementById("bh97p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+var CBOX=document.getElementById("c97p2Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh97p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH97P2:END-->
 </body>
 </html>
