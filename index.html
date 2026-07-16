@@ -1671,5 +1671,61 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH97P3:END-->
+<!--WY-BH97P4:BEGIN-->
+<style id="wy-bh97p4-css">
+.bh97p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh97p4-fabbox.show{display:block;}
+.bh97p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh97p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh97p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh97p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh97p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh97p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh97p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh97p4-modal.open{display:flex;}
+.bh97p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh97p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh97p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh97p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh97p4-close:hover{background:#dde2e6;}
+.bh97p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh97p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh97p4-tbl th,.bh97p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh97p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh97p4-tbl thead th:nth-child(1){width:32%;}.bh97p4-tbl thead th:nth-child(2){width:41%;}.bh97p4-tbl thead th:nth-child(3){width:27%;}
+.bh97p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh97p4-guan{background:#eef2f5;color:#37505f;}
+.bh97p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh97p4-tbl tbody tr:nth-child(even) td.bh97p4-guan{background:#e8eef2;}
+.bh97p4-tbl b{color:#8b2500;}
+.bh97p4-guan b{color:#2f6b5a;}
+.bh97p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh97p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh97p4-fabbox{right:14px;}.bh97p4-tbl{font-size:11px;}.bh97p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh97p4-fabbox" id="bh97p4Box"><button class="bh97p4-btn" id="bh97p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh97p4-ic">譯</span><span class="bh97p4-ls"><span class="bh97p4-l1">本品 · 原文·白話·中觀</span><span class="bh97p4-l2">白話翻譯表</span></span></button></div><div class="bh97p4-modal" id="bh97p4Modal" role="dialog" aria-modal="true"><div class="bh97p4-card"><button class="bh97p4-close" id="bh97p4Close" type="button" aria-label="關閉">×</button><h3>第4品 · 破無明的階次悖論與五十二三昧釋名 原文↔白話↔中觀 翻譯表</h3><p class="sub">《大智度論》卷九十七 · 薩陀波崙品之餘 · 第四品經文原典（破無明非齊頭式定義問答‧五十一三昧總列‧見之徹底定義‧山頂喻終極圓滿）· 原文↔白話↔中觀概念 逐段對照（本品前段導讀框架章節重複引句已依鐵律核實剔除，不重複收錄）</p><table class="bh97p4-tbl"><caption>《大智度論》卷97‧第四品‧破無明與三昧釋名‧原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh97p4-src">問曰：若是菩薩破一切法中無明，此人尚不須見佛，何用至曇無竭菩薩所？</td><td>問：如果這位菩薩已經破除了一切法之中的無明，那麼這個人應該連佛都不需要再見了，又何必要前往曇無竭菩薩的住處呢？</td><td class="bh97p4-guan"><b>破無明與求見善知識的表面矛盾</b>——此問緊接薩陀波崙證得無礙知見之後而發，以詰難方式凸顯一個看似合理的悖論：若無明已破、見道已成，繼續跋涉求法便顯得多此一舉。此問正是為了逼出下文「破」的非齊頭式定義而設的鋪墊。</td></tr><tr><td class="bh97p4-src">答曰：破無明不唯一種——有遮令不起亦名為破，有得諸法實相故破無明。又無明種數甚多：有菩薩所破分，有佛所破分，有小菩薩所破分、大菩薩所破分；如先說燈譬喻。又須陀洹亦名破無明，乃至阿羅漢方是實破；大乘法中亦如是，新發意菩薩得諸法實相故亦名破無明，乃至佛無明盡破無餘。是故薩陀波崙於佛法中邪見、無明及我見皆盡故，得名破無明三昧，無咎。</td><td>答：破除無明並不是只有一種——有一種是「遮止令其不生起」，這也稱為破；另一種是因為證得諸法實相而破除無明。而且無明的種類非常多：有菩薩所應斷的部分，有唯佛才能斷的部分，也有小菩薩所破、大菩薩所破的差別；就像先前用燈的譬喻所說明的一樣。又如須陀洹也可以稱為破無明，但要到阿羅漢才是真正究竟的破；大乘法中的道理也是如此：剛發心的菩薩因證得諸法實相，也可以稱為破無明，一直要到成佛才是把無明徹底破盡無餘。因此，薩陀波崙在佛法之中，邪見、無明以及我見都已經滅盡，所以稱他證得「破無明三昧」，這樣說並沒有過失。</td><td class="bh97p4-guan"><b>破的位階光譜·遮與實破消解表面矛盾</b>——此答以「遮」（暫時壓伏令不起，如石壓草）與「滅／實破」（般若智慧徹底斷除）兩種定義，搭配從須陀洹到阿羅漢、從新發意菩薩到佛的位階光譜，徹底化解前問的表面矛盾：薩陀波崙的破無明是真實而非虛妄的，卻是「因位」之破而非「果位」的究竟破——見道不等於旅程的終點。</td></tr><tr><td class="bh97p4-src">諸法性觀三昧，諸法性不可得三昧，破諸法無明三昧，諸法不異三昧，諸法不壞自在三昧，諸法能照明三昧，諸法離闇三昧，諸法無異相續三昧，諸法不可得三昧，散華三昧，諸法無我三昧，如幻威勢三昧，得如鏡像三昧，得一切眾生語言三昧，一切眾生歡喜三昧，入分別音聲三昧，得種種語言字句莊嚴三昧，無畏三昧，性常默然三昧，得無礙解脫三昧，離塵垢三昧，名字語句莊嚴三昧，見諸法三昧，諸法無礙頂三昧，如虛空三昧，如金剛三昧，不畏著色三昧，得勝三昧，轉眼三昧，畢法性三昧，能與安隱三昧，師子吼三昧，勝一切眾生三昧，華莊嚴三昧，斷疑三昧，隨一切堅固三昧，出諸法得神通力無畏三昧，能達諸法三昧，諸法財印三昧，諸法無分別見三昧，離諸見三昧，離一切闇三昧，離一切相三昧，解脫一切著三昧，除一切懈怠三昧，得深法明三昧，不可奪三昧，破魔三昧，不著三界三昧，起光明三昧，見諸佛三昧。</td><td>薩陀波崙這時證得的三昧共有五十一種，包括：觀照諸法真實體性的「諸法性觀三昧」、不執取此體性相狀的「諸法性不可得三昧」、破除諸法上無明的「破諸法無明三昧」、照見諸法無差別的「諸法不異三昧」、於不壞諸法中得大自在的「諸法不壞自在三昧」、能照明一切法的「諸法能照明三昧」、遠離愚闇的「諸法離闇三昧」、見諸法相續無異的「諸法無異相續三昧」、了知諸法不可執取的「諸法不可得三昧」、如散花般莊嚴供養的「散華三昧」、觀諸法無我的「諸法無我三昧」、如幻師般具大威勢變化的「如幻威勢三昧」、觀三界如鏡中影像的「得如鏡像三昧」、通達一切眾生語言的「得一切眾生語言三昧」、令一切眾生歡喜的「一切眾生歡喜三昧」、善能分別種種音聲的「入分別音聲三昧」、以種種語言文字莊嚴說法的「得種種語言字句莊嚴三昧」、得無所畏懼的「無畏三昧」、體性常自寂然的「性常默然三昧」、得無障礙解脫的「得無礙解脫三昧」、遠離煩惱塵垢的「離塵垢三昧」、以名相語句莊嚴的「名字語句莊嚴三昧」、照見諸法實相的「見諸法三昧」、於諸法通達無礙至極的「諸法無礙頂三昧」、心如虛空無所罣礙的「如虛空三昧」、堅利能破一切障礙的「如金剛三昧」、不畏懼亦不貪著色法的「不畏著色三昧」、得殊勝功德的「得勝三昧」、能轉變所見一切的「轉眼三昧」、究竟法性的「畢法性三昧」、能施予眾生安穩的「能與安隱三昧」、如獅子吼震懾群邪的「師子吼三昧」、功德超勝一切眾生的「勝一切眾生三昧」、以功德花莊嚴的「華莊嚴三昧」、斷除一切疑惑的「斷疑三昧」、隨順一切堅固不動的「隨一切堅固三昧」、出生種種神通無畏之力的「出諸法得神通力無畏三昧」、通達一切法的「能達諸法三昧」、以諸法為法財印證的「諸法財印三昧」、於諸法無分別知見的「諸法無分別見三昧」、遠離一切邪見執見的「離諸見三昧」、遠離一切愚闇的「離一切闇三昧」、遠離一切執取之相的「離一切相三昧」、解脫一切貪著的「解脫一切著三昧」、除去一切懈怠的「除一切懈怠三昧」、得甚深法之光明的「得深法明三昧」、不為魔外所奪的「不可奪三昧」、摧破魔軍魔事的「破魔三昧」、不執著三界的「不著三界三昧」、生起智慧光明的「起光明三昧」，以及得見十方諸佛的「見諸佛三昧」。</td><td class="bh97p4-guan"><b>五十一三昧總列·從破到見的完整路徑圖</b>——這份密集列表看似雜多堆疊，實可用《中論》空—假—中三層定位：開頭三個（性觀、性不可得、破無明）呼應前品剛證得的破執之慧；中段（如幻威勢、得如鏡像、種種語言莊嚴等）轉向不廢緣起的方便妙用；末段（如金剛、師子吼、破魔、見諸佛）則指向降伏與圓滿。三昧之多，正顯畢竟空中不礙無盡緣起妙用——空非枯寂，而是開出無量方便的活水源頭。</td></tr><tr><td class="bh97p4-src">「『見』者，六十二邪見，及色等法中取相，乃至佛見、法見、僧見、涅槃見，皆名為見。所以者何？取相能生著心故。」</td><td>「所謂的『見』，是指六十二種邪見，以及在色法等一切法之中執取相狀的心，乃至於對佛的見解、對法的見解、對僧的見解、對涅槃的見解，這些都稱為『見』。為什麼呢？因為只要執取相狀，就會生起貪著執著的心。」</td><td class="bh97p4-guan"><b>見的定義即取相著心·善見亦須遣除</b>——此處對「見」下了極徹底的定義：不僅世俗六十二邪見是見，甚至對佛、法、僧、涅槃這些至善對象所生起的見解執著，同樣被歸類為「見」而須遣除。判準只有一個——是否「取相」而生著心，正呼應般若一貫「善法亦不可著」的立場，與「離諸見三昧」相互印證。</td></tr><tr><td class="bh97p4-src">「如人在山頂遍觀四方；菩薩住是三昧中，普見一切諸法無礙。」</td><td>「就好比人站在山頂上，能夠遍觀四面八方；菩薩安住在這個三昧之中，也能夠普遍照見一切諸法而毫無障礙。」</td><td class="bh97p4-guan"><b>山頂喻·見諸佛三昧的終極視角</b>——此喻正解釋列表末項「見諸佛三昧」的極致境界：如同立於群山之巔可以毫無遮蔽地俯瞰四方，菩薩安住此三昧對一切法的照見同樣暢通無阻——這是全品由「破」（破無明）到「見」（普見無礙）辯證發展的最終圓滿意象。</td></tr></tbody></table><p class="bh97p4-note">本表為卷九十七第四品之原文‧白話‧中觀三欄逐段對照，共五段，核心為「破無明是否即不須見佛」之問答（遮與實破的位階光譜）、薩陀波崙所證五十一三昧總列，以及「見」之徹底定義與山頂喻的終極圓滿意象。與本品前段導讀性框架章節重複之引句已依鐵律核實剔除，不重複收錄。　中觀關鍵詞：遮與實破　見道非究竟　空假中三層儀表板　取相即著　山頂無礙</p></div></div>
+<script id="wy-bh97p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh97p4Btn"),BOX=document.getElementById("bh97p4Box"),MODAL=document.getElementById("bh97p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+var CBOX=document.getElementById("c97p4Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh97p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH97P4:END-->
 </body>
 </html>
